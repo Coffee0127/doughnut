@@ -28,6 +28,7 @@ export default defineComponent({
   components: { NoteWithLinks },
   computed: {
     noteRealm() {
+      console.log('noteRealm')
       return this.piniaStore.getNoteRealmById(this.noteId);
     },
   },
